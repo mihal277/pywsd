@@ -23,13 +23,13 @@ print('Warming up PyWSD (takes ~10 secs)...', end=' ', file=sys.stderr, flush=Tr
 start = time.time()
 
 from pywsd.lesk import *
-from pywsd.baseline import *
-from pywsd.similarity import *
+# from pywsd.baseline import *
+# from pywsd.similarity import *
 
 #import semcor
 #import semeval
 
-from pywsd.allwords_wsd import disambiguate
+# from pywsd.allwords_wsd import disambiguate
 
-simple_lesk('This is a foo bar sentence', 'bar')
+# simple_lesk('This is a foo bar sentence', 'bar')
 print('took {} secs.'.format(time.time()-start), file=sys.stderr)
